@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use((req, res, next)=>{
     console.log("Acessou o middleware!");
-    res.header("Access-Control-Allow-Origin", "http://localhost:8080/");
+    res.header("Access-Control-Allow-Origin", "http://localhost:4000/");
     res.header("Access-Control-Allow-Methods", 'GET', 'PUT', 'POST, DELETE')
     app.use(cors());
     next();
